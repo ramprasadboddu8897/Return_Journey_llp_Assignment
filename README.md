@@ -21,3 +21,28 @@ This Node.js application provides two API endpoints for IP address validation an
     "userName": "John Doe",
     "phoneNumber": "+1234567890"
   }
+
+### Response:
+
+#### Valid IP (from "India"):
+
+  **OTP Sent:**
+
+  ```json
+  {
+    "message": "OTP sent to +1234567890"
+  }
+
+  **Error(OTP not Sent):**
+
+  ```json
+  {
+    "error": "Failed to send OTP. Please try again later."
+  }
+
+### Invalid OTP:
+
+  ```json
+  {
+    "error": "Invalid OTP. Please enter the correct OTP."
+  }
